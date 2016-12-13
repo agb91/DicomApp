@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using DicomObjects;
 using DicomObjects.EventArguments;
+using WindowsFormsApplication1;
 
 namespace WindowsFormsApplication1
 {
@@ -46,11 +47,11 @@ namespace WindowsFormsApplication1
             List<String> lsf = fh.getSubFolders();
             //MessageBox.Show( lsf[0] );
 
-  
-
             //Application.Run( new GridIndex( ap.getIndexFile() ) );
-            Application.Run(new GridIndex());
+            Application.Run(new GridIndex() );
 
         }
+
     }
+
 }
